@@ -4,7 +4,7 @@ org 000h
 	mov r2,#00h
 	mov r3,#00h
 rpt:	mov a,@r0
-	jnb a.0, next
+	jnb acc.0, next    ;a.0 doesnot works
 	inc r3		;increment odd count
 	sjmp again
 next:	inc r2		;increment even count
